@@ -1,37 +1,44 @@
-import {Box, Grid, Typography, useMediaQuery, useTheme} from "@mui/material";
+import {Box, Button, Container, Grid, Typography, useTheme} from "@mui/material";
 import TechChip from "./TechChip.jsx"
+import ContactMe from "./ContactMe.jsx";
+
+const TECH_STACK = [
+    'JavaScript', 'TypeScript', 'React', 'Redux', 'Mui', 'Jest',
+    'Node.js', 'Express', 'Strapi', 'PostgreSQL', 'MongoDB',  'Python', 'Java', 'RESTful API', 'Postman',
+    'Git', 'Docker', 'AWS', 'IntelliJ IDEA'
+];
 
 const AboutMe = () => {
     const theme = useTheme();
-    const isMobile = useMediaQuery(theme.breakpoints.down("sm"));
 
-    return <Grid container
-                 spacing={2}
-                 sx={{minHeight: '70vh', backgroundColor: theme.palette.accent.default}}
-                 alignItems="center"
-                 textAlign="center">
-        <Grid size={{xs: 12, sm: 6}} padding={6}>
-            <Typography variant="h4">About Me</Typography>
-            <Typography variant="body1" component="p" gutterBottom color={theme.palette.text.secondary}>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed a justo vitae dui convallis ultricies.
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed a justo vitae dui convallis ultricies.
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed a justo vitae dui convallis ultricies.
-            </Typography>
+    return <Container maxWidth="xl">
+        <Grid container
+              spacing={2}
+              sx={{minHeight: '70vh'}}
+              alignItems="center"
+              textAlign="center">
+            <Grid size={{xs: 12, sm: 12, md: 6}} padding={6}>
+                <Typography variant="h2" gutterBottom mb={5}>About me</Typography>
+                <Typography variant="body1" component="p" gutterBottom color={theme.palette.text.secondary}>
+                    I'm a dedicated and highly motivated <strong>software engineer</strong> with over 5&nbsp;years of hands-on experience&nbsp;
+                    <strong>in designing, developing, and testing software applications.</strong>&nbsp;Well practiced in delivering efficient, high-quality code tailored to meet client expectations and drive
+                    impactful results.
+                </Typography>
+                <Button variant="contained" size="large">Contact me</Button>
+            </Grid>
+            <Grid size={{xs: 12, sm: 12, md: 6}} padding={6}>
+                <Typography variant="h2">Technology stack</Typography>
+                <Box mt={3}>
+                    {
+                        TECH_STACK.map((skill, index) => (
+                            <TechChip key={`${skill}-${index}`} label={skill}/>
+                        ))
+                    }
+                </Box>
+            </Grid>
         </Grid>
-        <Grid size={{xs: 12, sm: 6}}>
-            <Typography variant="h4">Technology stack</Typography>
-            <Box mt={3}>
-                <TechChip label="Chip Filled" />
-                <TechChip label="Chip Filled" />
-                <TechChip label="Chip Filled" />
-                <TechChip label="Chip Filled" />
-                <TechChip label="Chip Filled" />
-                <TechChip label="Chip Filled" />
-                <TechChip label="Chip Filled" />
-                <TechChip label="Chip Filled" />
-            </Box>
-        </Grid>
-    </Grid>
+    </Container>
+
 }
 
 export default AboutMe;
