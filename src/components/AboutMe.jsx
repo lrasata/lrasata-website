@@ -1,6 +1,5 @@
 import {Box, Button, Container, Grid, Typography, useTheme} from "@mui/material";
 import TechChip from "./TechChip.jsx"
-import ContactMe from "./ContactMe.jsx";
 
 const TECH_STACK = [
     'JavaScript', 'TypeScript', 'React', 'Redux', 'Mui', 'Jest',
@@ -10,6 +9,15 @@ const TECH_STACK = [
 
 const AboutMe = () => {
     const theme = useTheme();
+
+    const handleClick = () => {
+        const link = document.createElement("a");
+        link.href = "/lr-resume.pdf";
+        link.setAttribute("download", "liantsoa-rasata-resume.pdf");
+        document.body.appendChild(link);
+        link.click();
+        document.body.removeChild(link);
+    }
 
     return <section id="about">
         <Container maxWidth="xl">
@@ -25,7 +33,7 @@ const AboutMe = () => {
                         <strong>in designing, developing, and testing software applications.</strong>&nbsp;Well practiced in delivering efficient, high-quality code tailored to meet client expectations and drive
                         impactful results.
                     </Typography>
-                    <Button variant="contained" size="large" sx={{ mt: 5}} href="../assets/lr-resume.pdf" download="lr-resume.pdf">
+                    <Button variant="contained" size="large" sx={{ mt: 5}} onClick={handleClick}>
                             Download my resume
                     </Button>
                 </Grid>

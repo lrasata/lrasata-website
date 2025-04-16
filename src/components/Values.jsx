@@ -22,6 +22,15 @@ const VALUES = [
 const Values = () => {
     const theme = useTheme();
 
+    const handleClick = () => {
+        const link = document.createElement("a");
+        link.href = "/lr-resume.pdf";
+        link.setAttribute("download", "liantsoa-rasata-resume.pdf");
+        document.body.appendChild(link);
+        link.click();
+        document.body.removeChild(link);
+    }
+
     return <Box alignContent="center"
                 textAlign="center"
                 sx={{minHeight: '50vh', backgroundColor: theme.palette.background.default}}>
@@ -53,7 +62,7 @@ const Values = () => {
                 }
 
             </Grid>
-            <Button variant="contained" size="large" sx={{ mb: 5}} href="../assets/lr-resume.pdf" download="lr-resume.pdf">
+            <Button variant="contained" size="large" sx={{ mb: 5}} onClick={handleClick}>
                 Download my resume
             </Button>
         </Container>
