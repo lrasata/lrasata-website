@@ -11,33 +11,37 @@ const TECH_STACK = [
 const AboutMe = () => {
     const theme = useTheme();
 
-    return <Container maxWidth="xl">
-        <Grid container
-              spacing={2}
-              sx={{minHeight: '70vh'}}
-              alignItems="center"
-              textAlign="center">
-            <Grid size={{xs: 12, sm: 12, md: 6}} padding={6}>
-                <Typography variant="h2" gutterBottom mb={5}>About me</Typography>
-                <Typography variant="body1" component="p" gutterBottom color={theme.palette.text.secondary}>
-                    I'm a dedicated and highly motivated <strong>software engineer</strong> with over 5&nbsp;years of hands-on experience&nbsp;
-                    <strong>in designing, developing, and testing software applications.</strong>&nbsp;Well practiced in delivering efficient, high-quality code tailored to meet client expectations and drive
-                    impactful results.
-                </Typography>
-                <Button variant="contained" size="large">Contact me</Button>
+    return <section id="about">
+        <Container maxWidth="xl">
+            <Grid container
+                  spacing={2}
+                  sx={{minHeight: '70vh'}}
+                  alignItems="center"
+                  textAlign="center">
+                <Grid size={{xs: 12, sm: 12, md: 6}} padding={6}>
+                    <Typography variant="h2" gutterBottom mb={5}>About me</Typography>
+                    <Typography variant="body1" component="p" gutterBottom color={theme.palette.text.secondary}>
+                        I'm a dedicated and highly motivated <strong>software engineer</strong> with over 5&nbsp;years of hands-on experience&nbsp;
+                        <strong>in designing, developing, and testing software applications.</strong>&nbsp;Well practiced in delivering efficient, high-quality code tailored to meet client expectations and drive
+                        impactful results.
+                    </Typography>
+                    <Button variant="contained" size="large" sx={{ mt: 5}} href="../assets/lr-resume.pdf" download="lr-resume.pdf">
+                            Download my resume
+                    </Button>
+                </Grid>
+                <Grid size={{xs: 12, sm: 12, md: 6}} padding={6}>
+                    <Typography variant="h2">Technology stack</Typography>
+                    <Box mt={3}>
+                        {
+                            TECH_STACK.map((skill, index) => (
+                                <TechChip key={`${skill}-${index}`} label={skill}/>
+                            ))
+                        }
+                    </Box>
+                </Grid>
             </Grid>
-            <Grid size={{xs: 12, sm: 12, md: 6}} padding={6}>
-                <Typography variant="h2">Technology stack</Typography>
-                <Box mt={3}>
-                    {
-                        TECH_STACK.map((skill, index) => (
-                            <TechChip key={`${skill}-${index}`} label={skill}/>
-                        ))
-                    }
-                </Box>
-            </Grid>
-        </Grid>
-    </Container>
+        </Container>
+    </section>
 
 }
 

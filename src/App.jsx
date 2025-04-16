@@ -4,13 +4,13 @@ import Values from "./components/Values.jsx";
 import ContactMe from "./components/ContactMe.jsx";
 import Projects from "./components/Projects.jsx";
 import Footer from "./components/Footer.jsx";
-import Navigation from "./components/Navigation.jsx";
+import DrawerAppBar from "./components/DrawerAppBar.jsx";
 
 function App() {
 
     return (
         <>
-            <Navigation />
+            <DrawerAppBar />
             <HeroBanner/>
             <AboutMe/>
             <Values/>

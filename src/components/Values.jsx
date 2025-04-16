@@ -1,4 +1,4 @@
-import {Box, Card, CardContent, Container, Grid, Typography, useMediaQuery, useTheme} from "@mui/material";
+import {Box, Button, Card, CardContent, Container, Grid, Typography, useTheme} from "@mui/material";
 
 const VALUES = [
     {
@@ -7,7 +7,7 @@ const VALUES = [
     },
     {
         title: "Communication",
-        description: "One most essential  soft skill of software engineering. I keep things simple, clear, and easy for everyone to follow.",
+        description: "One of most essential  soft skill in software engineering. I keep things simple, clear, and easy for everyone to follow.",
     },
     {
         title: "Collaboration",
@@ -24,14 +24,17 @@ const Values = () => {
 
     return <Box alignContent="center"
                 textAlign="center"
-                sx={{minHeight: '70vh', backgroundColor: theme.palette.background.default}}>
+                sx={{minHeight: '50vh', backgroundColor: theme.palette.background.default}}>
         <Container maxWidth="xl">
-            <Typography variant="h2" gutterBottom my={5}>My work ethics</Typography>
+            <Typography variant="h2" gutterBottom my={5}>My work ethic</Typography>
             <Grid container spacing={2}
                   justifyContent="center"
                   display={'flex'}
                   flexGrow={1}
-                  alignItems="stretch" padding={2}>
+                  alignItems="stretch"
+                  padding={2}
+                  mb={5}
+            >
                 {
                     VALUES.map((item, index) => (
                         <Grid size={{xs: 12, sm: 3}} key={index}>
@@ -50,6 +53,9 @@ const Values = () => {
                 }
 
             </Grid>
+            <Button variant="contained" size="large" sx={{ mb: 5}} href="../assets/lr-resume.pdf" download="lr-resume.pdf">
+                Download my resume
+            </Button>
         </Container>
 
     </Box>

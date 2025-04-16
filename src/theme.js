@@ -5,11 +5,11 @@ const theme = createTheme({
         fontFamily: '"Fira Code", "Source Code Pro", monospace',
         h1: {
             fontWeight: 700,
-            fontSize: '2.5rem',
+            fontSize: '2rem',
         },
         h2: {
             fontWeight: 600,
-            fontSize: '2rem',
+            fontSize: '1.5rem',
         },
         body1: {
             fontSize: '1rem',
@@ -35,9 +35,6 @@ const theme = createTheme({
             primary: '#3E2C23', // deep brown for contrast
             secondary: '#6E4E37',
         },
-        accent: {
-            default: '#fcf5eb',
-        }
     },
     components: {
         MuiButton: {
@@ -51,7 +48,7 @@ const theme = createTheme({
         MuiPaper: {
             styleOverrides: {
                 root: {
-                    borderRadius: '16px',
+                    borderRadius: '12px',
                     boxShadow: '0 4px 14px rgba(139, 94, 60, 0.1)',
                 },
             },
