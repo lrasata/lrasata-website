@@ -1,4 +1,4 @@
-import {Box, Button, Container, Grid, Typography, useTheme} from "@mui/material";
+import {Box, Button, Container, Grid, Typography, useMediaQuery, useTheme} from "@mui/material";
 import TechChip from "./TechChip.jsx"
 
 const TECH_STACK = [
@@ -9,6 +9,7 @@ const TECH_STACK = [
 
 const AboutMe = () => {
     const theme = useTheme();
+    const isMobile = useMediaQuery(theme.breakpoints.down('sm'));
 
     const handleClick = () => {
         const link = document.createElement("a");
@@ -25,10 +26,11 @@ const AboutMe = () => {
                   spacing={2}
                   sx={{minHeight: '70vh'}}
                   alignItems="center"
-                  textAlign="center">
-                <Grid size={{xs: 12, sm: 12, md: 6}} padding={6}>
+                  textAlign="center"
+                  my={3}>
+                <Grid size={{xs: 12, sm: 12, md: 6}} padding={isMobile ? 2 : 4}>
                     <Typography variant="h2" gutterBottom mb={5}>About me</Typography>
-                    <Typography variant="body1" component="p" gutterBottom color={theme.palette.text.secondary}>
+                    <Typography variant="body1" component="p" gutterBottom>
                         I'm a dedicated and highly motivated <strong>software engineer</strong> with over 5&nbsp;years of hands-on experience&nbsp;
                         <strong>in designing, developing, and testing software applications.</strong>&nbsp;Well practiced in delivering efficient, high-quality code tailored to meet client expectations and drive
                         impactful results.
@@ -37,7 +39,7 @@ const AboutMe = () => {
                             Download my resume
                     </Button>
                 </Grid>
-                <Grid size={{xs: 12, sm: 12, md: 6}} padding={6}>
+                <Grid size={{xs: 12, sm: 12, md: 6}} padding={isMobile ? 2 : 4}>
                     <Typography variant="h2">Technology stack</Typography>
                     <Box mt={3}>
                         {

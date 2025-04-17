@@ -3,11 +3,11 @@ import {Box, Button, Card, CardContent, Container, Grid, Typography, useTheme} f
 const VALUES = [
     {
         title: "Get it done & Do it right",
-        description: "You’ve got the idea — I’ll build it right. Clean, solid, and scalable.",
+        description: "You’ve got the idea. I’ll build it right. Clean, solid, and scalable.",
     },
     {
         title: "Communication",
-        description: "One of most essential  soft skill in software engineering. I keep things simple, clear, and easy for everyone to follow.",
+        description: "One of the most essential  soft skill in software engineering. I keep things simple, clear, and easy for everyone to follow.",
     },
     {
         title: "Collaboration",
@@ -15,7 +15,7 @@ const VALUES = [
     },
     {
         title: "Problem solving",
-        description: "Roadblocks? No stress. I figure it out and keep things moving.\n",
+        description: "Roadblocks? No stress. I figure it out and keep things moving.",
     }
 
 ]
@@ -33,7 +33,7 @@ const Values = () => {
 
     return <Box alignContent="center"
                 textAlign="center"
-                sx={{minHeight: '50vh', backgroundColor: theme.palette.background.default}}>
+                sx={{minHeight: '50vh', backgroundColor: theme.palette.background.default, py: 3}}>
         <Container maxWidth="xl">
             <Typography variant="h2" gutterBottom my={5}>My work ethic</Typography>
             <Grid container spacing={2}
@@ -48,8 +48,8 @@ const Values = () => {
                     VALUES.map((item, index) => (
                         <Grid size={{xs: 12, sm: 3}} key={index}>
                             <Card sx={{ height: '100%' }}>
-                                <CardContent sx={{height: '100%'}}>
-                                    <Typography variant="h5" gutterBottom my={4}>
+                                <CardContent sx={{height: '100%', padding: 3}}>
+                                    <Typography variant="h3" gutterBottom my={3} color={"textSecondary"}>
                                         {item.title}
                                     </Typography>
                                     <Typography variant="body1">

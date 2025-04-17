@@ -5,18 +5,38 @@ const theme = createTheme({
         fontFamily: '"Fira Code", "Source Code Pro", monospace',
         h1: {
             fontWeight: 700,
-            fontSize: '2rem',
+            fontSize: '1.5rem',
+            '@media (min-width:960px)': {
+                fontSize: '2rem', // md and up
+            },
         },
         h2: {
             fontWeight: 600,
-            fontSize: '1.5rem',
+            fontSize: '1.3rem',
+            '@media (min-width:960px)': {
+                fontSize: '1.5rem',
+            },
+        },
+        h3: {
+            fontWeight: 600,
+            fontSize: '1.1rem',
+            '@media (min-width:960px)': {
+                fontSize: '1.3rem',
+            },
         },
         body1: {
-            fontSize: '1rem',
+            fontSize: '0.85rem',
+            '@media (min-width:960px)': {
+                fontSize: '0.95rem',
+            },
         },
         button: {
             textTransform: 'none',
             fontWeight: 500,
+            fontSize: '0.9rem',
+            '@media (min-width:960px)': {
+                fontSize: '1rem',
+            },
         },
     },
     palette: {
@@ -49,7 +69,7 @@ const theme = createTheme({
             styleOverrides: {
                 root: {
                     borderRadius: '12px',
-                    boxShadow: '0 4px 14px rgba(139, 94, 60, 0.1)',
+                    boxShadow: '0 8px 24px rgba(142, 98, 60, 0.25)',
                 },
             },
         },
