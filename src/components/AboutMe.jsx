@@ -3,7 +3,7 @@ import TechChip from "./TechChip.jsx"
 
 const TECH_STACK = [
     'JavaScript', 'TypeScript', 'React', 'Redux', 'Mui', 'Jest',
-    'Node.js', 'Express', 'Strapi', 'PostgreSQL', 'MongoDB',  'Python', 'Java', 'RESTful API', 'Postman',
+    'Node.js', 'Express', 'Strapi', 'PostgreSQL', 'MongoDB', 'Mongoose', 'GraphQL', 'NoSQL', 'Python', 'Java', 'RESTful API', 'Postman',
     'Git', 'Docker', 'AWS', 'IntelliJ IDEA'
 ];
 

@@ -4,6 +4,7 @@ import obsLogo from "../assets/obs-logo.png";
 import todoList from "../assets/todolist.png";
 import themealrecipe from "../assets/themealrecipedb.png";
 import questionworkflow from "../assets/question-workflow.png";
+import pokedex from "../assets/pokedex.png";
 import ProjectSection from "./ProjectSection.jsx";
 
 
@@ -57,6 +58,16 @@ const WORK = [
                 link: "https://github.com/lrasata/themeal-recipe-db-app",
                 buttonText: "Access demo and code",
                 tags: ["Typescript", "React", "MUI", "Redux"],
+            },
+            {
+                logo: pokedex,
+                ariaLabel: "Pokedex",
+                title: "Pokedex",
+                description: "Another full stack web application which I built as a practice of learning GraphQL. " +
+                    "This web application features a backend built with Node.js, Express, MongoDB and Mongoose. And the frontend is built with Mui and React.",
+                link: "https://github.com/lrasata/pokedex/tree/main",
+                buttonText: "Access demo and code",
+                tags: ["Javascript", "Typescript", "React", "MUI", "Node.js", "Express", "MongoDB", "Mongoose", "GraphQL", "NoSQL"],
             },
             {
                 logo: questionworkflow,
