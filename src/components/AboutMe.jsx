@@ -20,15 +20,6 @@ const AboutMe = () => {
         document.body.removeChild(link);
     }
 
-    const handleClick = () => {
-        const link = document.createElement("a");
-        link.href = "/lr-resume.pdf";
-        link.setAttribute("download", "liantsoa-rasata-resume.pdf");
-        document.body.appendChild(link);
-        link.click();
-        document.body.removeChild(link);
-    }
-
     return <section id="about">
         <Container maxWidth="xl">
             <Grid container
