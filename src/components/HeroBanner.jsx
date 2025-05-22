@@ -21,7 +21,7 @@ const HeroBanner = () => {
                     Hello World! I'm&nbsp;Liantsoa.
                 </Typography>
                 <Typography variant="h2" component="h1" gutterBottom color="text.secondary">
-                    Full Stack Engineer
+                    Frontend Engineer
                 </Typography>
                 <Typography variant="body1" component="p" gutterBottom>
                     I love turning ideas into reality. Got something in mind? Let’s build it together.
