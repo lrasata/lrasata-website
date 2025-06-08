@@ -1,20 +1,35 @@
-# Personal portfolio website with React + Vite
 
-This is my personal portfolio website repository. This project showcases my skills, experiences and projects as a full-stack engineer.
-The website also allows users to download my resume and view my contact information.
+# Liantsoa Rasata – Portfolio
 
-## Installation
+**Frontend Engineer** with 5+ years of experience building responsive, performant, and accessible web apps using **React, TypeScript**, and modern frontend tooling. I'm based in Karlsruhe, Germany, and currently focused on fully remote or local on-site roles with English-speaking teams.
 
-To run this project locally, follow these steps:
+## About This Project
 
-1. **Install dependencies:**
+This site serves as my **professional portfolio**, showcasing my key projects and technical capabilities. Built for speed, accessibility, and clarity, it follows a minimalist, responsive design pattern.
 
-   ```sh
-   npm install
+**Highlights:**
+- Multi-section layout: About, Projects, Skills, and Contact
+- Clean, mobile-first design built with React and JavaScript
+- Deployed on Firebase Hosting
 
-   ```
+## Getting Started
 
-2. **Run the project:**
-   ```sh
-   npm run dev
-   ```
+### Run Locally
+
+```bash
+git clone https://github.com/lrasata/lrasata-website.git
+cd lrasata-website
+npm install
+npm run dev
+```
+
+### Build & Deploy
+
+```bash
+npm run build
+# Upload contents of `dist/` to your favourite static server (e.g. Firebase Hosting)
+```
+
+## License
+
+Distributed under the MIT License.
