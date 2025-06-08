@@ -7,19 +7,17 @@ import Footer from "./components/Footer.jsx";
 import DrawerAppBar from "./components/DrawerAppBar.jsx";
 
 function App() {
-
-    return (
-        <>
-            <DrawerAppBar/>
-            <HeroBanner/>
-            <AboutMe/>
-            <Values/>
-            <Projects/>
-            <ContactMe/>
-            <Footer/>
-        </>
-
-    )
+  return (
+    <>
+      <DrawerAppBar />
+      <HeroBanner />
+      <AboutMe />
+      <Values />
+      <Projects />
+      <ContactMe />
+      <Footer />
+    </>
+  );
 }
 
 export default App;
