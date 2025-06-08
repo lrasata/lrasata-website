@@ -32,7 +32,7 @@ const HeroBanner = () => {
           sx={{ width: dimension, height: dimension, my: 4 }}
         />
         <Typography variant="h1" component="h1" gutterBottom mb={2}>
-          Hello World! I'm&nbsp;Liantsoa.
+          Hello World!👋I'm&nbsp;Liantsoa.
         </Typography>
         <Typography
           variant="h2"

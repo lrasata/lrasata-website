@@ -68,15 +68,12 @@ const AboutMe = () => {
               About me
             </Typography>
             <Typography variant="body1" component="p" gutterBottom>
-              I'm a dedicated and highly motivated{" "}
-              <strong>frontend engineer</strong> with over 5&nbsp;years of
-              hands-on experience&nbsp;
-              <strong>
-                in designing, developing, and testing software and web
-                applications.
-              </strong>
-              &nbsp;Well practiced in delivering efficient, high-quality code
-              tailored to meet client expectations and drive impactful results.
+              I’m&nbsp;a <strong>frontend engineer</strong> based in Karlsruhe,
+              Germany, working with React and TypeScript. With over 5&nbsp;years
+              of hands-on experience, I&nbsp;build performant, accessible web
+              apps and focused on component-driven design. I&nbsp;am experienced
+              in writing efficient, maintainable code to meet user and business
+              needs.
             </Typography>
             <Button
               variant="contained"
