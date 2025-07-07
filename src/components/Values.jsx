@@ -68,7 +68,7 @@ const Values = () => {
           mb={5}
         >
           {VALUES.map((item, index) => (
-            <Grid size={{ xs: 12, sm: 3 }} key={index}>
+            <Grid size={{ xs: 12, sm: 6, md: 3 }} key={index}>
               <Card sx={{ height: "100%" }}>
                 <CardContent sx={{ height: "100%", padding: 3 }}>
                   <Typography

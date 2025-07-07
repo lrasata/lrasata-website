@@ -30,7 +30,7 @@ const ProjectSection = ({ title, projectItems }) => {
           mb={5}
           key={`${item.title}-${index}`}
         >
-          <Grid size={{ xs: 12, sm: 3 }}>
+          <Grid size={{ xs: 12, sm: 4, md: 3 }}>
             <Card sx={{ height: 200 }}>
               <CardMedia
                 sx={{ height: "inherit", zoom: 0.5 }}
@@ -39,7 +39,7 @@ const ProjectSection = ({ title, projectItems }) => {
               />
             </Card>
           </Grid>
-          <Grid size={{ xs: 12, sm: 9 }}>
+          <Grid size={{ xs: 12, sm: 8, md: 9 }}>
             <Typography gutterBottom mb={1}>
               <strong>{item.title}</strong>
             </Typography>

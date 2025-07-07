@@ -18,7 +18,7 @@ const WORK = [
         description:
           "I contributed to designing and developing the Digital Front Door, a well-designed and user-friendly web application that empowered users in their healthcare journey. " +
           "While my primary focus was on building and maintaining a library of reusable UI components and features, I also played a role beyond frontend development. " +
-          "I contributed to enhancing and maintaining our backend application built with Strapi, developed CLI tools using Python for data migration, " +
+          "I contributed to enhancing and maintaining our backend application built with Strapi, developed Python CLI tools for data migration, " +
           "and helped implement an end-to-end solution for user analytics using tools like Prometheus and Grafana.",
         link: "https://orionhealth.com/global/digital-front-door/#",
         buttonText: "View the project",
@@ -26,12 +26,14 @@ const WORK = [
           "Javascript",
           "Typescript",
           "React",
+          "Redux",
           "Strapi",
           "Python",
           "Git",
-          "Docker",
-          "AWS",
+          "Prometheus",
           "Grafana",
+          "Docker",
+          "AWS"
         ],
       },
       {
