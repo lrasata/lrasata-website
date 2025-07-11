@@ -15,14 +15,13 @@ const CORE_COMPETENCIES = [
   "React",
   "Redux",
   "MUI",
-  "Emotion CSS",
-  "HTML",
-  "CSS",
+  "Emotion",
+  "Storybook",
 ];
 
 const OTHER_TECH_STACK = [
   "Jest",
-  "Testcafe",
+  "Cypress",
   "Python",
   "RESTful API",
   "Postman",

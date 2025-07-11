@@ -27,13 +27,16 @@ const WORK = [
           "Typescript",
           "React",
           "Redux",
+          "MUI",
+          "Emotion",
+          "Storybook",
           "Strapi",
           "Python",
           "Git",
           "Prometheus",
           "Grafana",
           "Docker",
-          "AWS"
+          "AWS",
         ],
       },
       {
