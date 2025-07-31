@@ -69,12 +69,13 @@ const AboutMe = () => {
               About me
             </Typography>
             <Typography variant="body1" component="p" gutterBottom>
-              I’m&nbsp;a <strong>frontend engineer</strong> based in Karlsruhe,
-              Germany, working with React and TypeScript. With over 5&nbsp;years
-              of hands-on experience, I&nbsp;build performant, accessible web
-              apps and focused on component-driven design. I&nbsp;am experienced
-              in writing efficient, maintainable code to meet user and business
-              needs.
+              I’m&nbsp;a <strong>frontend-focused software engineer</strong>{" "}
+              based in Karlsruhe, Germany, with 5+ years of experience building
+              scalable applications using React and TypeScript, plus backend
+              experience with Java and Spring Boot. Strong in full development
+              lifecycle ownership, from technical design and implementation to
+              documentation and team collaboration. Currently expanding cloud
+              skills through hands-on AWS and Terraform projects.
             </Typography>
             <Button
               variant="contained"
