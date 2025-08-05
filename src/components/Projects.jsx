@@ -17,7 +17,7 @@ const WORK = [
         ariaLabel: "orion health",
         title: "Apr 2022 - Feb 2025 | Auckland, New Zealand",
         description:
-          "I helped design and develop the Digital Front Door, a user-centric web app that <strong>improved healthcare accessibility</strong>. My primary focus was building and maintaining a robust library of reusable UI components, accelerating development and ensuring consistency. Beyond frontend, I enhanced our Strapi-based backend, built Python CLI tools to streamline data migration, and implemented an end-to-end analytics solution with Prometheus and Grafana to drive data-informed decisions.",
+          "I helped design and develop the Digital Front Door, a user-centric web app that improved healthcare accessibility. My primary focus was building and maintaining a robust library of reusable UI components, accelerating development and ensuring consistency. Beyond frontend, I enhanced our Strapi-based backend, built Python CLI tools to streamline data migration, and implemented an end-to-end analytics solution with Prometheus and Grafana to drive data-informed decisions.",
         link: "https://orionhealth.com/global/digital-front-door/#",
         buttonText: "View the project",
         tags: [
