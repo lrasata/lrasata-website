@@ -21,7 +21,7 @@ const HeroBanner = () => {
         alignItems="center"
         textAlign="center"
         sx={{
-          height: "100vh",
+          height: "90vh",
           backgroundColor: theme.palette.background.default,
           padding: "1rem",
         }}
@@ -40,11 +40,11 @@ const HeroBanner = () => {
           gutterBottom
           color="text.secondary"
         >
-          Frontend Engineer
+          Software Engineer who builds Web Applications
         </Typography>
-        <Typography variant="body1" component="p" gutterBottom>
-          I love turning ideas into reality. Got something in mind? Let’s build
-          it together.
+        <Typography variant="body1" component="p" gutterBottom mt={2}>
+          I love turning ideas ✨ into reality 🚀. Got something in mind? Let’s
+          build it together.
         </Typography>
       </Box>
     </section>

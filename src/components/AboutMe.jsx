@@ -8,6 +8,8 @@ import {
   useTheme,
 } from "@mui/material";
 import TechChip from "./TechChip.jsx";
+import List from "@mui/material/List";
+import ListItem from "@mui/material/ListItem";
 
 const CORE_COMPETENCIES = [
   "JavaScript",
@@ -17,27 +19,20 @@ const CORE_COMPETENCIES = [
   "MUI",
   "Emotion",
   "Storybook",
-];
-
-const OTHER_TECH_STACK = [
   "Jest",
   "Cypress",
-  "Python",
-  "RESTful API",
-  "Postman",
+  "RESTful APIs",
   "Java",
-  "Spring",
+  "Spring Boot",
+  "Postman",
   "PostgreSQL",
+  "Python",
   "Strapi",
-  "Node.js",
-  "Express",
-  "MongoDB",
-  "Mongoose",
-  "GraphQL",
   "Git",
   "Docker",
   "AWS",
-  "IntelliJ IDEA",
+  "Terraform",
+  "Kubernetes",
 ];
 
 const AboutMe = () => {
@@ -56,27 +51,42 @@ const AboutMe = () => {
   return (
     <section id="about">
       <Container maxWidth="xl">
-        <Grid
-          container
-          spacing={2}
-          sx={{ minHeight: "70vh" }}
-          alignItems="center"
-          textAlign="center"
-          my={3}
-        >
+        <Grid container spacing={2} my={3}>
           <Grid size={{ xs: 12, sm: 12, md: 6 }} padding={isMobile ? 2 : 4}>
-            <Typography variant="h2" gutterBottom mb={5}>
+            <Typography variant="h2" gutterBottom mb={2}>
               About me
             </Typography>
-            <Typography variant="body1" component="p" gutterBottom>
-              I’m&nbsp;a <strong>frontend-focused software engineer</strong>{" "}
-              based in Karlsruhe, Germany, with 5+ years of experience building
-              scalable applications using React and TypeScript, plus backend
-              experience with Java and Spring Boot. Strong in full development
-              lifecycle ownership, from technical design and implementation to
-              documentation and team collaboration. Currently expanding cloud
-              skills through hands-on AWS and Terraform projects.
-            </Typography>
+            <List sx={{ listStyleType: "disc", pl: 4 }}>
+              <ListItem sx={{ display: "list-item" }}>
+                <Typography variant="body1" component="span" gutterBottom>
+                  <strong>Software Engineer</strong> with 5+ years of experience
+                  based in Karlsruhe, Germany.
+                </Typography>
+              </ListItem>
+              <ListItem sx={{ display: "list-item" }}>
+                <Typography variant="body1" component="span" gutterBottom>
+                  <strong>Frontend-focused engineer</strong> building
+                  applications using <strong>React</strong> and{" "}
+                  <strong>TypeScript</strong>.
+                </Typography>
+              </ListItem>
+              <ListItem sx={{ display: "list-item" }}>
+                <Typography variant="body1" component="span" gutterBottom>
+                  Currently expanding cloud skills through hands-on projects
+                  with <strong>AWS</strong>, <strong>Terraform</strong> and{" "}
+                  <strong>Kubernetes</strong>.
+                </Typography>
+              </ListItem>
+              <ListItem sx={{ display: "list-item" }}>
+                <Typography variant="body1" component="span" gutterBottom>
+                  Strong in{" "}
+                  <strong>full development lifecycle ownership</strong>,
+                  including: Technical design, Implementation, Documentation and
+                  Team collaboration.
+                </Typography>
+              </ListItem>
+            </List>
+
             <Button
               variant="contained"
               size="large"
@@ -91,18 +101,7 @@ const AboutMe = () => {
               Technology stack
             </Typography>
             <Box mt={3}>
-              <Typography variant="subtitle1" gutterBottom>
-                Core competencies
-              </Typography>
               {CORE_COMPETENCIES.map((skill, index) => (
-                <TechChip key={`${skill}-${index}`} label={skill} />
-              ))}
-            </Box>
-            <Box mt={3}>
-              <Typography variant="subtitle1" gutterBottom>
-                Also familiar with{" "}
-              </Typography>
-              {OTHER_TECH_STACK.map((skill, index) => (
                 <TechChip key={`${skill}-${index}`} label={skill} />
               ))}
             </Box>

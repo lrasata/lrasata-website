@@ -9,6 +9,7 @@ const theme = createTheme({
       "@media (min-width:960px)": {
         fontSize: "2rem", // md and up
       },
+      lineHeight: "1.7rem",
     },
     h2: {
       fontWeight: 600,
@@ -16,6 +17,7 @@ const theme = createTheme({
       "@media (min-width:960px)": {
         fontSize: "1.5rem",
       },
+      lineHeight: "1.7rem",
     },
     h3: {
       fontWeight: 600,
@@ -23,12 +25,14 @@ const theme = createTheme({
       "@media (min-width:960px)": {
         fontSize: "1.3rem",
       },
+      lineHeight: "1.6rem",
     },
     body1: {
       fontSize: "0.85rem",
       "@media (min-width:960px)": {
         fontSize: "0.95rem",
       },
+      lineHeight: "1.5rem",
     },
     button: {
       textTransform: "none",

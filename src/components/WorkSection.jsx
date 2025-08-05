@@ -4,7 +4,6 @@ import {
   Card,
   CardMedia,
   Grid,
-  Stack,
   Typography,
   useMediaQuery,
   useTheme,
@@ -13,7 +12,7 @@ import PropTypes from "prop-types";
 import TechChip from "./TechChip.jsx";
 import Divider from "@mui/material/Divider";
 
-const ProjectSection = ({ title, projectItems }) => {
+const WorkSection = ({ title, projectItems }) => {
   const theme = useTheme();
   const isMobile = useMediaQuery(theme.breakpoints.down("sm"));
   return (
@@ -43,7 +42,7 @@ const ProjectSection = ({ title, projectItems }) => {
             <Typography gutterBottom mb={1}>
               <strong>{item.title}</strong>
             </Typography>
-            <Typography>{item.description}</Typography>
+            <Typography variant="body1">{item.description}</Typography>
             <Box my={2}>
               {item.tags.map((tag) => (
                 <TechChip label={tag} key={tag} fontSize={12} height={30} />
@@ -65,7 +64,7 @@ const ProjectSection = ({ title, projectItems }) => {
   );
 };
 
-ProjectSection.propTypes = {
+WorkSection.propTypes = {
   title: PropTypes.string,
   projectItems: PropTypes.arrayOf(
     PropTypes.shape({
@@ -80,4 +79,4 @@ ProjectSection.propTypes = {
   ),
 };
 
-export default ProjectSection;
+export default WorkSection;
