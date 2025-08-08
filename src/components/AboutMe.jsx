@@ -10,6 +10,8 @@ import {
 import TechChip from "./TechChip.jsx";
 import List from "@mui/material/List";
 import ListItem from "@mui/material/ListItem";
+import { motion } from "framer-motion";
+import { useInView } from "react-intersection-observer";
 
 const CORE_COMPETENCIES = [
   "JavaScript",
@@ -35,9 +37,22 @@ const CORE_COMPETENCIES = [
   "Kubernetes",
 ];
 
+const motionContainer = {
+  hidden: {},
+  visible: {
+    transition: { staggerChildren: 0.1 },
+  },
+};
+
+const motionItem = {
+  hidden: { opacity: 0, y: 10 },
+  visible: { opacity: 1, y: 0 },
+};
+
 const AboutMe = () => {
   const theme = useTheme();
   const isMobile = useMediaQuery(theme.breakpoints.down("sm"));
+  const { ref, inView } = useInView({ triggerOnce: true });
 
   const handleClick = () => {
     const link = document.createElement("a");
@@ -51,7 +66,7 @@ const AboutMe = () => {
   return (
     <section id="about">
       <Container maxWidth="xl">
-        <Grid container spacing={2} my={3}>
+        <Grid container spacing={0} my={6}>
           <Grid size={{ xs: 12, sm: 12, md: 6 }} padding={isMobile ? 2 : 4}>
             <Typography variant="h2" gutterBottom mb={2}>
               About me
@@ -101,9 +116,18 @@ const AboutMe = () => {
               Technology stack
             </Typography>
             <Box mt={3}>
-              {CORE_COMPETENCIES.map((skill, index) => (
-                <TechChip key={`${skill}-${index}`} label={skill} />
-              ))}
+              <motion.div
+                initial="hidden"
+                animate={inView && "visible"}
+                ref={ref}
+                variants={motionContainer}
+              >
+                {CORE_COMPETENCIES.map((skill, index) => (
+                  <motion.span key={index} variants={motionItem}>
+                    <TechChip key={`${skill}-${index}`} label={skill} />
+                  </motion.span>
+                ))}
+              </motion.div>
             </Box>
           </Grid>
         </Grid>

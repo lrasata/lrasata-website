@@ -6,6 +6,8 @@ import {
   useTheme,
 } from "@mui/material";
 import avatarPic from "../assets/avatar.png";
+import TypingText from "./animated/TypingText.jsx";
+import { motion } from "framer-motion";
 
 const HeroBanner = () => {
   const theme = useTheme();
@@ -13,39 +15,60 @@ const HeroBanner = () => {
   const dimension = isMobile ? 160 : 250;
 
   return (
-    <section id="home">
+    <section
+      id="home"
+      style={{
+        backgroundColor: theme.palette.background.default,
+        width: "100vw",
+        position: "relative",
+        left: "50%",
+        right: "50%",
+        marginLeft: "-50vw",
+        marginRight: "-50vw",
+      }}
+    >
       <Box
         display="flex"
         flexDirection="column"
         justifyContent="center"
         alignItems="center"
         textAlign="center"
+        px={2}
         sx={{
-          height: "90vh",
-          backgroundColor: theme.palette.background.default,
-          padding: "1rem",
+          height: "100vh",
+          margin: "0 auto",
         }}
       >
-        <Avatar
-          alt="Liantsoa Rasata"
-          src={avatarPic}
-          sx={{ width: dimension, height: dimension, my: 4 }}
-        />
+        <motion.div
+          initial={{ opacity: 0, y: 40 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.8 }}
+        >
+          <Avatar
+            alt="Liantsoa Rasata"
+            src={avatarPic}
+            sx={{ width: dimension, height: dimension, my: 4 }}
+          />
+        </motion.div>
+
         <Typography variant="h1" component="h1" gutterBottom mb={2}>
-          Hello World!👋I'm&nbsp;Liantsoa.
+          Hello World!👋 I'm&nbsp;Liantsoa.
         </Typography>
         <Typography
           variant="h2"
           component="h1"
           gutterBottom
           color="text.secondary"
+          mb={5}
         >
           Software Engineer who builds Web Applications
         </Typography>
-        <Typography variant="body1" component="p" gutterBottom mt={2}>
-          I love turning ideas ✨ into reality 🚀. Got something in mind? Let’s
-          build it together.
-        </Typography>
+
+        <TypingText
+          text="I love turning ideas ✨ into reality 🚀. Got something in mind? Let’s build it together."
+          variant="body1"
+          speed={70}
+        />
       </Box>
     </section>
   );

@@ -69,7 +69,17 @@ const Values = () => {
         >
           {VALUES.map((item, index) => (
             <Grid size={{ xs: 12, sm: 6, md: 3 }} key={index}>
-              <Card sx={{ height: "100%" }}>
+              <Card
+                sx={{
+                  height: "100%",
+                  transition: "transform 0.2s ease, box-shadow 0.2s ease",
+                  "&:hover": {
+                    transform: "translateY(-5px)",
+                    boxShadow:
+                      "0 4px 8px rgba(142, 98, 60, 0.25), 0 12px 32px rgba(142, 98, 60, 0.35)",
+                  },
+                }}
+              >
                 <CardContent sx={{ height: "100%", padding: 3 }}>
                   <Typography
                     variant="h3"

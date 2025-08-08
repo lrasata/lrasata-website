@@ -52,7 +52,7 @@ const theme = createTheme({
       main: "#A47551", // lighter brown accent
     },
     background: {
-      default: "#FDF8F4", // off-white warm
+      default: "#F9F1EB", // off-white warm
       paper: "#FFFFFF",
     },
     text: {
@@ -64,7 +64,7 @@ const theme = createTheme({
     MuiButton: {
       styleOverrides: {
         root: {
-          borderRadius: "12px",
+          borderRadius: "8px",
           padding: "8px 16px",
         },
       },
@@ -72,8 +72,9 @@ const theme = createTheme({
     MuiPaper: {
       styleOverrides: {
         root: {
-          borderRadius: "12px",
-          boxShadow: "0 8px 24px rgba(142, 98, 60, 0.25)",
+          borderRadius: "8px",
+          boxShadow:
+            "0 2px 6px rgba(142, 98, 60, 0.08), 0 4px 12px rgba(142, 98, 60, 0.12)",
         },
       },
     },
