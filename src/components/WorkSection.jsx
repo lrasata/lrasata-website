@@ -32,7 +32,7 @@ const WorkSection = ({ title, projectItems }) => {
           <Grid size={{ xs: 12, sm: 4, md: 3 }}>
             <Card sx={{ height: 200 }}>
               <CardMedia
-                sx={{ height: "inherit", zoom: 0.5 }}
+                sx={{ height: "inherit" }}
                 image={item.logo}
                 title={item.ariaLabel}
               />

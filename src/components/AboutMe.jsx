@@ -33,8 +33,7 @@ const CORE_COMPETENCIES = [
   "Git",
   "Docker",
   "AWS",
-  "Terraform",
-  "Kubernetes",
+  "Terraform"
 ];
 
 const motionContainer = {
