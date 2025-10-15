@@ -14,8 +14,13 @@ import { motion } from "framer-motion";
 import { useInView } from "react-intersection-observer";
 
 const CORE_COMPETENCIES = [
+  "AWS",
+  "Terraform",
+  "Docker",
+  "Git",
   "JavaScript",
   "TypeScript",
+  "Python",
   "React",
   "Redux",
   "MUI",
@@ -27,13 +32,8 @@ const CORE_COMPETENCIES = [
   "Java",
   "Spring Boot",
   "Postman",
-  "PostgreSQL",
-  "Python",
+  "SQL",
   "Strapi",
-  "Git",
-  "Docker",
-  "AWS",
-  "Terraform"
 ];
 
 const motionContainer = {
@@ -74,29 +74,33 @@ const AboutMe = () => {
               <ListItem sx={{ display: "list-item" }}>
                 <Typography variant="body1" component="span" gutterBottom>
                   <strong>Software Engineer</strong> with 5+ years of experience
-                  based in Karlsruhe, Germany.
+                  based in Germany.
                 </Typography>
               </ListItem>
               <ListItem sx={{ display: "list-item" }}>
                 <Typography variant="body1" component="span" gutterBottom>
-                  <strong>Frontend-focused engineer</strong> building
-                  applications using <strong>React</strong> and{" "}
-                  <strong>TypeScript</strong>.
+                  Experienced in building and maintaining scalable applications
+                  across the <strong>frontend and backend</strong> using React,
+                  TypeScript, NodeJS, Java, and Spring Boot.
                 </Typography>
               </ListItem>
               <ListItem sx={{ display: "list-item" }}>
                 <Typography variant="body1" component="span" gutterBottom>
-                  Currently expanding cloud skills through hands-on projects
-                  with <strong>AWS</strong>, <strong>Terraform</strong> and{" "}
-                  <strong>Kubernetes</strong>.
+                  Now focusing on <strong>Cloud Engineering</strong>, developing
+                  hands-on projects with <strong>AWS and Terraform</strong>.
                 </Typography>
               </ListItem>
               <ListItem sx={{ display: "list-item" }}>
                 <Typography variant="body1" component="span" gutterBottom>
-                  Strong in{" "}
-                  <strong>full development lifecycle ownership</strong>,
-                  including: Technical design, Implementation, Documentation and
-                  Team collaboration.
+                  My <strong>full-stack background</strong> helps me bridge the
+                  gap between application development and cloud infrastructure.
+                </Typography>
+              </ListItem>
+              <ListItem sx={{ display: "list-item" }}>
+                <Typography variant="body1" component="span" gutterBottom>
+                  Strong in <strong>end-to-end ownership</strong>, from
+                  technical design and implementation to documentation and team
+                  collaboration.
                 </Typography>
               </ListItem>
             </List>

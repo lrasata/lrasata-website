@@ -15,7 +15,8 @@ const WORK = [
       {
         logo: orionhealthLogo,
         ariaLabel: "orion health",
-        title: "Apr 2022 - Feb 2025 | Auckland, New Zealand",
+        title:
+          "Software Engineer | Apr 2022 - Feb 2025 | Auckland, New Zealand",
         description:
           "I helped design and develop the Digital Front Door, a user-centric web app that improved healthcare accessibility. My primary focus was building and maintaining a robust library of reusable UI components, accelerating development and ensuring consistency. Beyond frontend, I enhanced our Strapi-based backend, built Python CLI tools to streamline data migration, and implemented an end-to-end analytics solution with Prometheus and Grafana to drive data-informed decisions.",
         link: "https://orionhealth.com/global/digital-front-door/#",
@@ -40,7 +41,7 @@ const WORK = [
       {
         logo: obsLogo,
         ariaLabel: "orange business services",
-        title: "Sept 2016 - Sept 2019 | Rennes, France",
+        title: "Full-stack developer | Sept 2016 - Sept 2019 | Rennes, France",
         description:
           "Contributed to the design and development of the Flux Vision client web portal using JHipster, combining a Spring Boot backend with an Angular frontend. The portal enabled Orange clients to securely access data analytics reports and dashboards, delivering actionable insights that supported strategic business and operational decisions.",
         link: "https://www.orange-business.com/en/solutions/data-intelligence-iot/flux-vision",
@@ -50,7 +51,9 @@ const WORK = [
     ],
   },
   {
-    title: "Experiments",
+    title: "Hands-on projects",
+    description:
+      "Some of my personal projects for gaining hands-on experience. Check out my GitHub for more details.",
     projectItems: [
       {
         logo: koaLogo,
@@ -108,6 +111,7 @@ const Projects = () => {
           <ExperimentSection
             key={`${WORK[1].title}`}
             title={WORK[1].title}
+            description={WORK[1].description}
             projectItems={WORK[1].projectItems}
           />
         </Container>

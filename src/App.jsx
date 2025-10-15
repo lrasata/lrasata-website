@@ -19,7 +19,6 @@ function App() {
       <DrawerAppBar />
       <HeroBanner />
       <AboutMe />
-
       <Values />
       <Projects />
       <ContactMe />

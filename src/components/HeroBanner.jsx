@@ -61,11 +61,11 @@ const HeroBanner = () => {
           color="text.secondary"
           mb={5}
         >
-          Software Engineer who builds Web Applications
+          A Software Engineer on the path to Cloud Engineering
         </Typography>
 
         <TypingText
-          text="I love turning ideas ✨ into reality 🚀. Got something in mind? Let’s build it together."
+          text="Recently AWS Certified 🚀, I am excited to bring ideas ✨ to life in the cloud ☁️. Got something in mind? Let’s build it together."
           variant="body1"
           speed={70}
         />

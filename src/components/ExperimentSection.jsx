@@ -6,17 +6,36 @@ import {
   CardContent,
   CardMedia,
   Grid,
+  Tooltip,
   Typography,
 } from "@mui/material";
 import PropTypes from "prop-types";
 import TechChip from "./TechChip.jsx";
+import GitHubIcon from "@mui/icons-material/GitHub";
+import IconButton from "@mui/material/IconButton";
 
-const ExperimentSection = ({ title, projectItems }) => {
+const ExperimentSection = ({ title, description, projectItems }) => {
   return (
     <>
-      <Typography variant="h2" gutterBottom my={5} sx={{ textAlign: "center" }}>
-        {title}
-      </Typography>
+      <Box justifyItems="center">
+        <Typography variant="h2" gutterBottom my={5}>
+          {title}
+        </Typography>
+        <Typography variant="body1" my={3}>
+          {description}{" "}
+          <Tooltip title="Github account">
+            <IconButton
+              aria-label="github-account"
+              href="https://github.com/lrasata"
+              target="_blank"
+              color="primary"
+            >
+              <GitHubIcon fontSize="large" />
+            </IconButton>
+          </Tooltip>
+        </Typography>
+      </Box>
+
       <Grid container spacing={2} display={"flex"} mb={5}>
         {projectItems.map((item, index) => (
           <Grid size={{ xs: 12, sm: 6, md: 3 }} key={`${item.title}-${index}`}>
@@ -70,6 +89,7 @@ const ExperimentSection = ({ title, projectItems }) => {
 
 ExperimentSection.propTypes = {
   title: PropTypes.string,
+  description: PropTypes.string,
   projectItems: PropTypes.arrayOf(
     PropTypes.shape({
       logo: PropTypes.string,
