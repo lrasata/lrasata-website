@@ -1,10 +1,10 @@
 import { Box, Container } from "@mui/material";
 import orionhealthLogo from "../assets/orionhealth-logo.png";
 import obsLogo from "../assets/obs-logo.png";
-import todoList from "../assets/todolist.png";
-import themealrecipe from "../assets/themealrecipedb.png";
-import koaLogo from "../assets/koa.png";
-import pokedex from "../assets/pokedex.png";
+import portfolio from "../assets/portfolio-infra.png";
+import tripPlanner from "../assets/trip-planner-infra.png";
+import imageUploader from "../assets/image-uploader.png";
+import imageModerator from "../assets/image-moderator.png";
 import WorkSection from "./WorkSection.jsx";
 import ExperimentSection from "./ExperimentSection.jsx";
 
@@ -56,43 +56,52 @@ const WORK = [
       "Some of my personal projects for gaining hands-on experience. Check out my GitHub for more details.",
     projectItems: [
       {
-        logo: koaLogo,
-        ariaLabel: "Koa UI",
-        title: "Koa UI - Design System",
+        logo: portfolio,
+        ariaLabel: "Portfolio website",
+        title: "Portfolio website",
         description:
-          "Lightweight, themeable React component library built with Emotion and Storybook.",
-        link: "https://github.com/lrasata/koa-ui",
-        buttonText: "Access demo and code",
-        tags: ["React", "Emotion", "Storybook", "Chromatic"],
+          "Manages the infrastructure for a single page application using Terraform on AWS.",
+        link: "https://github.com/lrasata/infra-lrasata-website",
+        buttonText: "View the project",
+        tags: ["Cloudfront", "s3", "WAF", "Route53", "ACM", "Terraform"],
       },
       {
-        logo: todoList,
-        ariaLabel: "My TODO list",
-        title: "My TODO list",
-        description: "MERN full stack web application",
-        link: "https://github.com/lrasata/todo-list-app",
-        buttonText: "Access demo and code",
-        tags: ["MongoDB", "Express", "React", "Redux", "NoSQL", "Restful APIs"],
+        logo: tripPlanner,
+        ariaLabel: "Trip planner",
+        title: "Full-stack web application",
+        description:
+          "Manages the infrastructure of the frontend (React+Vite) and the backend (Java+Spring) of Trip planner web app",
+        link: "https://github.com/lrasata/infra-trip-planner-webapp",
+        buttonText: "View the project",
+        tags: [
+          "Fargate",
+          "RDS",
+          "S3",
+          "VPC",
+          "Cloudfront",
+          "Terraform",
+          "Docker",
+        ],
       },
       {
-        logo: themealrecipe,
-        ariaLabel: "The meal recipe database",
-        title: "The meal recipe database",
+        logo: imageUploader,
+        ariaLabel: "Image Uploader",
+        title: "Image uploader",
         description:
-          "Web application  showcasing React, Redux, Redux Toolkit, Redux Thunk, and React Router.",
-        link: "https://github.com/lrasata/themeal-recipe-db-app",
-        buttonText: "Access demo and code",
-        tags: ["Typescript", "React", "Redux", "MUI"],
+          "Serverless Terraform module for secure image uploads with optional malware scanning, thumbnail generation, and DynamoDB storage.",
+        link: "https://github.com/lrasata/infra-image-uploader",
+        buttonText: "View the project",
+        tags: ["S3", "Lambda", "API gateway", "DynamoDB"],
       },
       {
-        logo: pokedex,
-        ariaLabel: "Pokedex",
-        title: "Pokedex",
+        logo: imageModerator,
+        ariaLabel: "Image moderator",
+        title: "Image Moderator",
         description:
-          "Full stack web application built as a practice of learning GraphQL.",
-        link: "https://github.com/lrasata/pokedex/tree/main",
-        buttonText: "Access demo and code",
-        tags: ["React", "MUI", "Express", "MongoDB", "GraphQL", "NoSQL"],
+          "Serverless Terraform module that uses Rekognition to automatically scan S3 images for inappropriate content and alert admins.",
+        link: "https://github.com/lrasata/infra-s3-image-moderator",
+        buttonText: "View the project",
+        tags: ["S3", "Lambda", "Rekognition", "EventBridge", "SNS"],
       },
     ],
   },
