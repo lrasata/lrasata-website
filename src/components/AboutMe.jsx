@@ -18,6 +18,7 @@ const CORE_COMPETENCIES = [
   "Terraform",
   "Docker",
   "Git",
+  "Linux CLI",
   "JavaScript",
   "TypeScript",
   "Python",
@@ -73,27 +74,32 @@ const AboutMe = () => {
             <List sx={{ listStyleType: "disc", pl: 4 }}>
               <ListItem sx={{ display: "list-item" }}>
                 <Typography variant="body1" component="span" gutterBottom>
-                  <strong>Software Engineer</strong> with 5+ years of experience
-                  based in Germany.
+                  Cloud Engineer with{" "}
+                  <strong>
+                    AWS Solutions Architect – Associate certification
+                  </strong>{" "}
+                  and a strong{" "}
+                  <strong>full-stack development background</strong>.
                 </Typography>
               </ListItem>
               <ListItem sx={{ display: "list-item" }}>
                 <Typography variant="body1" component="span" gutterBottom>
-                  Experienced in building and maintaining scalable applications
-                  across the <strong>frontend and backend</strong> using React,
-                  TypeScript, NodeJS, Java, and Spring Boot.
-                </Typography>
-              </ListItem>
-              <ListItem sx={{ display: "list-item" }}>
-                <Typography variant="body1" component="span" gutterBottom>
-                  Now focusing on <strong>Cloud Engineering</strong>, developing
-                  hands-on projects with <strong>AWS and Terraform</strong>.
+                  Experienced in the <strong>full development lifecycle</strong>{" "}
+                  — design, implementation, documentation, and cross-team
+                  collaboration.
                 </Typography>
               </ListItem>
               <ListItem sx={{ display: "list-item" }}>
                 <Typography variant="body1" component="span" gutterBottom>
                   My <strong>full-stack background</strong> helps me bridge the
                   gap between application development and cloud infrastructure.
+                </Typography>
+              </ListItem>
+              <ListItem sx={{ display: "list-item" }}>
+                <Typography variant="body1" component="span" gutterBottom>
+                  Actively expanding expertise in{" "}
+                  <strong>AWS and Terraform</strong> to build scalable, secure
+                  cloud solutions.
                 </Typography>
               </ListItem>
               <ListItem sx={{ display: "list-item" }}>

@@ -2,6 +2,7 @@ import { Box, Stack, Tooltip, Typography, useTheme } from "@mui/material";
 import IconButton from "@mui/material/IconButton";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import GitHubIcon from "@mui/icons-material/GitHub";
+import ArticleIcon from "@mui/icons-material/Article";
 
 const ContactMe = () => {
   const theme = useTheme();
@@ -41,6 +42,16 @@ const ContactMe = () => {
               color="primary"
             >
               <GitHubIcon fontSize="large" />
+            </IconButton>
+          </Tooltip>
+          <Tooltip title="Medium stories">
+            <IconButton
+              aria-label="meidum-stories"
+              href="https://medium.com/@rmliantsoa"
+              target="_blank"
+              color="primary"
+            >
+              <ArticleIcon fontSize="large" />
             </IconButton>
           </Tooltip>
         </Stack>

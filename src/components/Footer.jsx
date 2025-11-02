@@ -17,7 +17,7 @@ const Footer = () => {
       width="100%"
     >
       <Typography sx={{ color: "white", fontSize: "12px !important" }}>
-        @{new Date().getFullYear()} Liantsoa Rasata. Built with ❤️
+        @{new Date().getFullYear()} Liantsoa Rasata.
       </Typography>
     </Box>
   );
