@@ -34,15 +34,6 @@ const VALUES = [
 const Values = () => {
   const theme = useTheme();
 
-  const handleClick = () => {
-    const link = document.createElement("a");
-    link.href = "/lr-resume.pdf";
-    link.setAttribute("download", "liantsoa-rasata-resume.pdf");
-    document.body.appendChild(link);
-    link.click();
-    document.body.removeChild(link);
-  };
-
   return (
     <Box
       alignContent="center"
@@ -95,14 +86,6 @@ const Values = () => {
             </Grid>
           ))}
         </Grid>
-        <Button
-          variant="contained"
-          size="large"
-          sx={{ mb: 5 }}
-          onClick={handleClick}
-        >
-          Download my resume
-        </Button>
       </Container>
     </Box>
   );

@@ -16,24 +16,26 @@ const ContactMe = () => {
         alignItems="center"
         textAlign="center"
         sx={{
-          height: "30vh",
+          height: "40vh",
           backgroundColor: theme.palette.background.default,
         }}
       >
-        <Typography variant="h2" gutterBottom>
-          Let's get in touch.
-        </Typography>
-        <Stack direction="row" spacing={2}>
+        <Stack direction="row" alignItems="center" spacing={2}>
+          <Typography variant="h3">LinkedIn</Typography>
+
           <Tooltip title="LinkedIn profile">
             <IconButton
               aria-label="linked-in-profile"
-              href="https://www.linkedin.com/in/liantsoa-rasata-b682b6122/"
+              href="https://www.linkedin.com/in/liantsoa-rasata/"
               target="_blank"
               color="primary"
             >
               <LinkedInIcon fontSize="large" />
             </IconButton>
           </Tooltip>
+
+          <Typography variant="h3">GitHub</Typography>
+
           <Tooltip title="Github account">
             <IconButton
               aria-label="github-account"
@@ -44,9 +46,16 @@ const ContactMe = () => {
               <GitHubIcon fontSize="large" />
             </IconButton>
           </Tooltip>
+        </Stack>
+
+        <Stack direction="row" alignItems="center" spacing={2}>
+          <Typography variant="h3">
+            I also write Blog posts on Medium
+          </Typography>
+
           <Tooltip title="Medium stories">
             <IconButton
-              aria-label="meidum-stories"
+              aria-label="medium-stories"
               href="https://medium.com/@rmliantsoa"
               target="_blank"
               color="primary"

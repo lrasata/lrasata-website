@@ -8,8 +8,6 @@ import {
   useTheme,
 } from "@mui/material";
 import TechChip from "./TechChip.jsx";
-import List from "@mui/material/List";
-import ListItem from "@mui/material/ListItem";
 import { motion } from "framer-motion";
 import { useInView } from "react-intersection-observer";
 
@@ -17,8 +15,13 @@ const CORE_COMPETENCIES = [
   "AWS",
   "Terraform",
   "Docker",
+  "Kubernetes",
+  "CI/CD",
   "Git",
   "Linux CLI",
+  "Helm",
+  "Prometheus",
+  "Grafana",
   "JavaScript",
   "TypeScript",
   "Python",
@@ -35,6 +38,7 @@ const CORE_COMPETENCIES = [
   "Postman",
   "SQL",
   "Strapi",
+  "Node.js",
 ];
 
 const motionContainer = {
@@ -67,49 +71,53 @@ const AboutMe = () => {
     <section id="about">
       <Container maxWidth="xl">
         <Grid container spacing={0} my={6}>
-          <Grid size={{ xs: 12, sm: 12, md: 6 }} padding={isMobile ? 2 : 4}>
+          <Grid
+            display="flex"
+            flexDirection="column"
+            size={{ xs: 12, sm: 12, md: 6 }}
+            padding={isMobile ? 2 : 4}
+          >
             <Typography variant="h2" gutterBottom mb={2}>
               About me
             </Typography>
-            <List sx={{ listStyleType: "disc", pl: 4 }}>
-              <ListItem sx={{ display: "list-item" }}>
-                <Typography variant="body1" component="span" gutterBottom>
-                  Cloud Engineer with{" "}
-                  <strong>
-                    AWS Solutions Architect – Associate certification
-                  </strong>{" "}
-                  and a strong{" "}
-                  <strong>full-stack development background</strong>.
-                </Typography>
-              </ListItem>
-              <ListItem sx={{ display: "list-item" }}>
-                <Typography variant="body1" component="span" gutterBottom>
-                  Experienced in the <strong>full development lifecycle</strong>{" "}
-                  — design, implementation, documentation, and cross-team
-                  collaboration.
-                </Typography>
-              </ListItem>
-              <ListItem sx={{ display: "list-item" }}>
-                <Typography variant="body1" component="span" gutterBottom>
-                  My <strong>full-stack background</strong> helps me bridge the
-                  gap between application development and cloud infrastructure.
-                </Typography>
-              </ListItem>
-              <ListItem sx={{ display: "list-item" }}>
-                <Typography variant="body1" component="span" gutterBottom>
-                  Actively expanding expertise in{" "}
-                  <strong>AWS and Terraform</strong> to build scalable, secure
-                  cloud solutions.
-                </Typography>
-              </ListItem>
-              <ListItem sx={{ display: "list-item" }}>
-                <Typography variant="body1" component="span" gutterBottom>
-                  Strong in <strong>end-to-end ownership</strong>, from
-                  technical design and implementation to documentation and team
-                  collaboration.
-                </Typography>
-              </ListItem>
-            </List>
+
+            <Typography variant="body1" component="span" gutterBottom mb={3}>
+              I’m a <strong>Cloud & DevOps Engineer</strong> with a strong{" "}
+              <strong>software engineering background</strong>, focused on
+              building reliable, automated, cloud-native systems.
+            </Typography>
+
+            <Typography variant="body1" component="span" gutterBottom mb={3}>
+              On the cloud side, I design and operate{" "}
+              <strong>AWS-based infrastructure</strong> using Infrastructure as
+              Code (Terraform), CI/CD pipelines, and containerized workloads.
+              I’m{" "}
+              <strong>
+                AWS Solutions Architect – Associate and HashiCorp Terraform
+                certified
+              </strong>
+              , with a strong focus on automation, reliability, security, and
+              cost awareness.
+            </Typography>
+
+            <Typography variant="body1" component="span" gutterBottom mb={3}>
+              On the software side, I spent several years as a{" "}
+              <strong>full-stack engineer</strong> working on{" "}
+              <strong>large-scale production systems</strong>, contributing to
+              both frontend and backend applications. This allows me to
+              understand developer needs and{" "}
+              <strong>
+                bridge the gap between application development and platform
+                engineering
+              </strong>
+              .
+            </Typography>
+
+            <Typography variant="body1" component="span" gutterBottom mb={3}>
+              I enjoy <strong>end-to-end ownership</strong>, from system design
+              and implementation to documentation and collaboration across
+              teams.
+            </Typography>
 
             <Button
               variant="contained"
@@ -117,7 +125,7 @@ const AboutMe = () => {
               sx={{ mt: 5 }}
               onClick={handleClick}
             >
-              Download my resume
+              ✨ Download my resume ✨
             </Button>
           </Grid>
           <Grid size={{ xs: 12, sm: 12, md: 6 }} padding={isMobile ? 2 : 4}>

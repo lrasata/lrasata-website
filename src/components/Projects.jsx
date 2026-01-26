@@ -18,7 +18,7 @@ const WORK = [
         title:
           "Software Engineer | Apr 2022 - Feb 2025 | Auckland, New Zealand",
         description:
-          "I helped design and develop the Digital Front Door, a user-centric web app that improved healthcare accessibility. My primary focus was building and maintaining a robust library of reusable UI components, accelerating development and ensuring consistency. Beyond frontend, I enhanced our Strapi-based backend, built Python CLI tools to streamline data migration, and implemented an end-to-end analytics solution with Prometheus and Grafana to drive data-informed decisions.",
+          "Helped build a user-centric healthcare web platform, focusing on reusable frontend components, backend improvements, developer tooling, and end-to-end observability.",
         link: "https://orionhealth.com/global/digital-front-door/#",
         buttonText: "View the project",
         tags: [
@@ -43,7 +43,7 @@ const WORK = [
         ariaLabel: "orange business services",
         title: "Full-stack developer | Sept 2016 - Sept 2019 | Rennes, France",
         description:
-          "Contributed to the design and development of the Flux Vision client web portal using JHipster, combining a Spring Boot backend with an Angular frontend. The portal enabled Orange clients to securely access data analytics reports and dashboards, delivering actionable insights that supported strategic business and operational decisions.",
+          "Developed features for the Flux Vision client web portal using JHipster, with a Spring Boot backend and Angular frontend, providing secure access to analytics dashboards for Orange enterprise clients.",
         link: "https://www.orange-business.com/en/solutions/data-intelligence-iot/flux-vision",
         buttonText: "View the project",
         tags: ["Angular", "Typescript", "Java", "Spring Boot", "JHipster"],
@@ -56,42 +56,50 @@ const WORK = [
       "Some of my personal projects for gaining hands-on experience. Check out my GitHub for more details.",
     projectItems: [
       {
-        logo: portfolio,
-        ariaLabel: "Portfolio website",
-        title: "Portfolio website",
-        description:
-          "Manages the infrastructure for a single page application using Terraform on AWS.",
-        link: "https://github.com/lrasata/infra-lrasata-website",
-        buttonText: "View the project",
-        tags: ["Cloudfront", "s3", "WAF", "Route53", "ACM", "Terraform"],
-      },
-      {
         logo: tripPlanner,
         ariaLabel: "Trip planner",
-        title: "Full-stack web application",
+        title: "3-Tier web application",
         description:
           "Manages the infrastructure of the frontend (React+Vite) and the backend (Java+Spring) of Trip planner web app",
         link: "https://github.com/lrasata/infra-trip-planner-webapp",
-        buttonText: "View the project",
+        buttonText: "View on GitHub",
         tags: [
           "Fargate",
+          "ECS",
+          "Docker",
           "RDS",
           "S3",
           "VPC",
+          "Subnets",
+          "ALB",
           "Cloudfront",
+          "Route53",
+          "ACM",
+          "API Gateway",
+          "Lambda",
+          "CloudWatch",
+          "CI/CD",
           "Terraform",
-          "Docker",
         ],
       },
       {
         logo: imageUploader,
-        ariaLabel: "Image Uploader",
-        title: "Image uploader",
+        ariaLabel: "File Uploader",
+        title: "File uploader",
         description:
-          "Serverless Terraform module for secure image uploads with optional malware scanning, thumbnail generation, and DynamoDB storage.",
+          "Serverless Terraform module for secure file uploads with optional malware scanning, thumbnail generation, and DynamoDB storage",
         link: "https://github.com/lrasata/infra-image-uploader",
-        buttonText: "View the project",
-        tags: ["S3", "Lambda", "API gateway", "DynamoDB"],
+        buttonText: "View on GitHub",
+        tags: [
+          "S3",
+          "Lambda",
+          "API Gateway",
+          "DynamoDB",
+          "CloudWatch",
+          "WAF",
+          "CI/CD",
+          "Terraform",
+        ],
       },
       {
         logo: imageModerator,
@@ -100,8 +108,18 @@ const WORK = [
         description:
           "Serverless Terraform module that uses Rekognition to automatically scan S3 images for inappropriate content and alert admins.",
         link: "https://github.com/lrasata/infra-s3-image-moderator",
-        buttonText: "View the project",
+        buttonText: "View on GitHub",
         tags: ["S3", "Lambda", "Rekognition", "EventBridge", "SNS"],
+      },
+      {
+        logo: portfolio,
+        ariaLabel: "Portfolio website",
+        title: "Portfolio website",
+        description:
+          "Manages the infrastructure for a single page application using Terraform on AWS.",
+        link: "https://github.com/lrasata/infra-lrasata-website",
+        buttonText: "View on GitHub",
+        tags: ["Cloudfront", "s3", "WAF", "Route53", "ACM", "Terraform"],
       },
     ],
   },
