@@ -82,7 +82,7 @@ const AboutMe = () => {
             </Typography>
 
             <Typography variant="body1" component="span" gutterBottom mb={3}>
-              I’m a <strong>Cloud & DevOps Engineer</strong> with a strong{" "}
+              I’m a <strong>Full-stack Engineer</strong> with a strong{" "}
               <strong>software engineering background</strong>, focused on
               building reliable, automated, cloud-native systems.
             </Typography>

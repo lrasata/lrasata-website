@@ -61,7 +61,7 @@ const HeroBanner = () => {
           color="text.secondary"
           mb={5}
         >
-          Cloud DevOps Engineer | AWS & Terraform Certified 🚀
+          Full-stack Engineer with Cloud and DevOps focus | AWS & Terraform Certified 🚀
         </Typography>
 
         <TypingText
